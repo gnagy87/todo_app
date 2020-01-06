@@ -1,0 +1,10 @@
+<%= render 'pages/navbar' %>
+
+  <ul class="list-group">
+    <li class="list-group-item active"><%= @todo.title %></li>
+    <li class="list-group-item"><%= image_tag  @todo.avatar.url(:medium) %></li>
+    <li class="list-group-item"><%= @todo.description %></li>
+    <li class="list-group-item"><%= @todo.user.username %></li>
+  </ul>
+
+  <%= link_to 'Back', todos_path %>

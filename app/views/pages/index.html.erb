@@ -1,0 +1,5 @@
+<%= render 'navbar' %>
+
+<% if current_user %>
+  <h1> Hello  <%= @user.username %> </h1>
+<% end %>

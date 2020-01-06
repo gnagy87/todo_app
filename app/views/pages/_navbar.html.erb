@@ -1,0 +1,7 @@
+<nav class="navbar navbar-dark bg-primary">
+  <span class="navbar-brand mb-0 h1"><%= link_to 'My Todos', todos_path %></span>
+  <span class="navbar-brand mb-0 h1"><%= link_to 'All Todos', pages_all_todos_path %></span>
+  <span class="navbar-brand mb-0 h1"><%= link_to 'New Todo', new_todo_path %></span>
+  <span class="navbar-brand mb-0 h1"><%= link_to 'Delete all todo', delete_all_todos_path, data: { confirm: 'Are you sure?' } %></span>
+  <span class="navbar-brand mb-0 h1"><%= link_to 'My account', edit_user_registration_path %></span>
+</nav>
